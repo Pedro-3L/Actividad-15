@@ -21,7 +21,21 @@ namespace Ejercicio__10
 				}
 			} while (correcto == false);
 
-			Console.WriteLine("Cantidad valida");
+			string[] productos = new string[cantidad];
+			string nombre;
+
+			for (int i = 0; i < cantidad; i++)
+			{
+				Console.Clear();
+				Console.WriteLine($"Producto #{i + 1}");
+				productos[i] = Console.ReadLine();
+			}
+			Console.Clear();
+			Console.WriteLine("Lista de productos:");
+			for (int i = 0; i < cantidad; i++)
+			{
+				Console.WriteLine(productos[i]);
+			}
 		}
 	}
 }
